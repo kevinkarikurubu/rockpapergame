@@ -19,7 +19,7 @@ let gameresult;
           document.write("Game No.");
           document.write(i);
           window.alert("You have Won");
-          document.write("   You won, congs pick your cash from counter <br>");
+          document.write("   You won, congs pick your cash from the counter <br>");
         } else {
           winner = "Computer has Won";
           document.write("Game No.");
@@ -30,7 +30,6 @@ let gameresult;
         console.log(winner);
         return winner;
       }
-
       playGame();
       var playagain = window.confirm("Do you want to play again?");
       console.log(playagain);
