@@ -1,10 +1,10 @@
 let gameresult;
-      let player_options = ["rock", "paper", "scissors"];
+      cont player_options = ["rock", "paper", "scissors"];
       let winner;
       let i = 0;
 
       function playGame(playerSelection, computerSelection) {
-        let computerSelection =
+        const computerSelection =
           player_options[Math.floor(Math.random() * player_options.length)];
         let playerSelection = window.prompt(
           "Among the three Who will win? Rock,Papers and Scissors"
@@ -31,7 +31,7 @@ let gameresult;
         return winner;
       }
       playGame();
-      let playagain = window.confirm("Do you want to play again?");
+      const playagain = window.confirm("Do you want to play again?");
       console.log(playagain);
       while (playagain == true) {
         playGame();
